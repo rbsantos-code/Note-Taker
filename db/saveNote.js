@@ -51,7 +51,7 @@ class saveNotes {
 
     delete(id) {
         return this.getNotesData()
-        .then(info => info.filter(info => info.id !== id))
+        .then(info => info.filter(info => info.id !== parseInt(id)))
         .then(filteredInfo => this.write(filteredInfo));
     }
 
