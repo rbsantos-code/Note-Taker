@@ -23,9 +23,12 @@ router.post('/notes', (req, res) => {
 
 // note delete route
 router.delete('/notes/:id', (req, res) => {
+    const noteID = req.params.id;
     saveNote
-    .delete(req.params.id)
-    .then(() => res.json({ ok: true }))
+    .delete(noteID)
+    .then(() => res.json({
+      message: 'success'
+    }))
     .catch(err => res.status(500).json(err))
 });
 
