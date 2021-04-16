@@ -20,10 +20,6 @@ router.post('/notes', (req, res) => {
     .catch(err => res.status(500).json(err));
 });
 
-// notes get specific id
-router.get('/notes/:id', (req, res) => {
-   
-});
 
 // note delete route
 router.delete('/notes/:id', (req, res) => {
