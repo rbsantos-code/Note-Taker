@@ -2,7 +2,6 @@
 const fs = require('fs');
 // add syntax to use util properties and methods
 const util = require('util');
-const {v4: uuidv4 } = require('uuid');
 
 
 const readData = util.promisify(fs.readFile);
@@ -50,7 +49,7 @@ class saveNotes {
         .then(() => newNotes);
     }
 
-    delete() {
+    delete(id) {
         return this.getNotesData()
         .then(info => info.filter(info => info.id !== id))
         .then(filteredInfo => this.write(filteredInfo));
