@@ -1,7 +1,7 @@
 # Note-Taker
 
 ## Purpose
-* For this week's challenge, we as students are tasks to create an application called Note Taker that we can use to write and save notes.
+* For this week's challenge, we as students are tasked to create an application called Note Taker that we can use to write and save notes.
 
 ## Table of Contents
 * [Goals](#Goals)
@@ -13,7 +13,7 @@
 ## Goals
 * I want to be able to write and save notes that I type into this application
 * When I click on the link to the notes page, I want to be presented with a page with exisiting notes listed on the left side
-* WHen I enter a new not title and notes text, I could save the text by pressing the save icon
+* When I enter a new title and notes text, I could save the text by pressing the save icon
 * When I want to delete an existing notes in the application, I could do so by pressing the trash icon next to the saved text
 
 ## Screenshots
